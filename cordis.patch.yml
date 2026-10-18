@@ -1,0 +1,18 @@
+# ============================================================================
+# dsh-search-enhance —— DSH bundle patch
+# ============================================================================
+# 把「查找资料加速」这套工具挂进 profile。
+#
+# 安装：在插件目录跑
+#   node install.mjs --check    # 只看会做什么，不落盘
+#   node install.mjs            # 真实拷贝进 profile
+#   node install.mjs --uninstall
+#
+# 注意：**不要用 pnpm 装**。pnpm 对本地路径一律建 junction，而 DSH 桌面端
+# 的插件管理读不到 junction 形态的包（装上但界面里看不见）。install.mjs
+# 用 fs.cpSync 放真实文件副本，界面就能正常显示和开关。
+# ============================================================================
+
+- insert:
+    - id: dsh-search-enhance
+      name: dsh-search-enhance

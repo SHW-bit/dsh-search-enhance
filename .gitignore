@@ -1,0 +1,10 @@
+node_modules/
+*.tgz
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+# 调试产物：抓下来的搜索页 HTML、临时探针脚本
+_dump_*
+_dbg_*

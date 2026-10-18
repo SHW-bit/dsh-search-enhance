@@ -1,0 +1,44 @@
+{
+  "name": "dsh-search-enhance",
+  "version": "1.0.0",
+  "description": "DSH 插件：补上官方 web_search 的四块短板——并发多查询、批量读正文、跨轮缓存、本地代码与文档倒排检索。零依赖。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "icon.png",
+    "install.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "icon": "./icon.png",
+  "engines": {
+    "node": "^22.19 || >=24"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "search",
+    "cache",
+    "retrieval"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SHW-bit/dsh-search-enhance.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SHW-bit/dsh-search-enhance/issues"
+  },
+  "homepage": "https://github.com/SHW-bit/dsh-search-enhance#readme",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
